@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check-up do Carro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Check-up do Seu Veículo</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Informações do Veículo</legend>
+            <label>Marca do carro:</label>
+            <input type="text" name="marca" required>
+
+            <label>Modelo:</label>
+            <input type="text" name="modelo" required>
+
+            <label>Ano de fabricação:</label>
+            <input type="number" name="ano" min="1950" max="2025" required>
+
+            <label>Quilometragem atual:</label>
+            <input type="number" name="km" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Manutenção Preventiva</legend>
+            <p>Quando foi a última troca de óleo?</p>
+            <input type="radio" name="troca_oleo" value="menos3meses" required> Menos de 3 meses
+            <input type="radio" name="troca_oleo" value="3a6meses"> Entre 3 e 6 meses
+            <input type="radio" name="troca_oleo" value="mais6meses"> Mais de 6 meses
+
+            <p>Quais itens você costuma verificar regularmente?</p>
+            <input type="checkbox" name="itens_verificados" value="oleo"> Óleo do motor
+            <input type="checkbox" name="itens_verificados" value="filtros"> Filtros de ar e combustível
+            <input type="checkbox" name="itens_verificados" value="freios"> Freios e pastilhas
+            <input type="checkbox" name="itens_verificados" value="pneus"> Pressão e estado dos pneus
+            <input type="checkbox" name="itens_verificados" value="bateria"> Bateria e sistema elétrico
+
+            <p>Já fez a revisão do seu carro este ano?</p>
+            <input type="radio" name="revisao" value="sim" required> Sim
+            <input type="radio" name="revisao" value="nao"> Não
+        </fieldset>
+
+        <fieldset>
+            <legend>Opinião e Sugestões</legend>
+            <label>Qual a sua maior dificuldade na manutenção do carro?</label>
+            <textarea name="dificuldade" rows="4"></textarea>
+
+            <label>Qual marca de óleo você utiliza?</label>
+            <select name="marca_oleo">
+                <option value="castrol">Castrol</option>
+                <option value="mobil">Mobil</option>
+                <option value="shell">Shell</option>
+                <option value="elf">Elf</option>
+                <option value="outra">Outra</option>
+            </select>
+        </fieldset>
+
+        <button type="reset">Resetar</button>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

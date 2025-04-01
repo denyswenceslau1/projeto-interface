@@ -1,0 +1,208 @@
+/* Reset de margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo e estrutura geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Fundo claro para dar contraste com o azul */
+    color: #333; /* Cor do texto principal */
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #1e3d58; /* Azul mais escuro para títulos */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1e3d58; /* Azul escuro */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Menu de navegação */
+nav {
+    background-color: #3c4a5e; /* Cinza-escuro com toque de azul */
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: #1e3d58; /* Azul mais claro para o hover */
+}
+
+/* Conteúdo principal */
+main {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 8px;
+}
+
+h1, h2, h3, p {
+    margin-bottom: 20px;
+}
+
+/* Títulos secundários */
+h2 {
+    color: #3c4a5e; /* Cor do título secundário */
+}
+
+/* Parágrafos */
+p {
+    font-size: 1rem;
+    color: #555; /* Cinza médio para o texto */
+}
+
+b, i, u {
+    color: #1e3d58; /* Azul para ênfase */
+}
+
+/* Código */
+pre, code {
+    background-color: #e2e8f0; /* Cinza-claro para fundo do código */
+    padding: 10px;
+    border-radius: 4px;
+    font-family: monospace;
+    color: #333;
+}
+
+pre {
+    white-space: pre-wrap; 
+    word-wrap: break-word;
+    margin-top: 20px;
+}
+
+/* Listas */
+ul {
+    list-style: square;
+    margin: 20px 0;
+    padding-left: 30px;
+}
+
+ul li {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1e3d58; /* Azul escuro */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+footer a:hover {
+    color: #f4f4f4; /* Clareia o texto no hover */
+}
+
+footer .social-links {
+    list-style: none;
+    padding: 10px 0;
+}
+
+footer .social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer .social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+footer .social-links a:hover {
+    color: #f4f4f4;
+}
+
+/* Links internos */
+a {
+    color: #1e3d58;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para os botões */
+button {
+    background-color: #1e3d58;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #3c4a5e; /* Azul mais claro no hover */
+}
+
+/* Estilo para o formulário */
+form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form input[type="submit"] {
+    background-color: #1e3d58;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #3c4a5e;
+}
