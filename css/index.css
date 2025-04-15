@@ -8,9 +8,10 @@
 /* Corpo e estrutura geral */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4; /* Fundo claro para dar contraste com o azul */
+    background-color: #cdcdcf; /* Fundo claro para dar contraste com o azul */
     color: #333; /* Cor do texto principal */
     line-height: 1.6;
+    text-align: center;
 }
 
 h1, h2, h3 {
@@ -206,3 +207,50 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
     background-color: #3c4a5e;
 }
+
+table {
+    width: 100%; 
+    border-collapse: collapse; 
+    margin: 20px 0; 
+    font-family: 'Roboto', sans-serif;
+}
+
+th, td {
+    padding: 12px 15px; 
+    text-align: left; 
+    border: 1px solid #ddd; 
+}
+
+/* Estilo para cabeçalhos (th) */
+th {
+    background-color: #3498db; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto no cabeçalho */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+/* Alternância de cores de fundo para as linhas (zebra-striping) */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Cor de fundo das linhas pares */
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff; /* Cor de fundo das linhas ímpares */
+}
+
+/* Efeito de hover para as linhas */
+tr:hover {
+    background-color: #293466; /* Cor de fundo quando o mouse passa sobre a linha */
+    color: white; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilo para a tabela quando ela está vazia */
+table.empty {
+    border: none; /* Remover bordas se a tabela estiver vazia */
+}
+
+/* Estilo das bordas da tabela */
+table, th, td {
+    border: 1px solid #ddd; /* Borda leve em torno de todas as células e da tabela */
+}
+
+/* Estilo para o cabeçalho*
